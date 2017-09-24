@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margen_general">20dp</dimen>
+    <dimen name="imagenes">100dp</dimen>
+    <dimen name="vs">80sp</dimen>
+</resources>

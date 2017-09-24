@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margen_general"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/imgBulbasaur"
+                android:layout_width="@dimen/imagenes"
+                android:layout_height="@dimen/imagenes"
+                android:src="@drawable/bulbasaur"/>
+            <ImageView
+                android:id="@+id/imgCharmander"
+                android:layout_width="@dimen/imagenes"
+                android:layout_height="@dimen/imagenes"
+                android:src="@drawable/charmander"/>
+            <ImageView
+                android:id="@+id/imgCharizar"
+                android:layout_width="@dimen/imagenes"
+                android:layout_height="@dimen/imagenes"
+                android:src="@drawable/charizar"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/imgUsuario"
+                    android:layout_width="@dimen/imagenes"
+                    android:layout_height="@dimen/imagenes"
+                    android:src="@drawable/incognita"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtuser"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vs"
+                android:textStyle="bold"
+                android:textSize="@dimen/vs"/>
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/imgComputer"
+                    android:layout_width="@dimen/imagenes"
+                    android:layout_height="@dimen/imagenes"
+                    android:src="@drawable/incognita"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtcomp"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/btnJugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jugar"/>
+            <Button
+                android:id="@+id/btnReiniciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnReiniciar"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
